@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
 
   const handleCadastrarMedico = () => {
-    router.push('/Cadastro/CadastroMedic'); // aqui você cria sua tela de cadastro depois
+    router.push('/Cadastro/CadastroMedic'); 
   };
 
   return (

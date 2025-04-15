@@ -1,7 +1,7 @@
   import React, { useState } from 'react';
   import { Text, StyleSheet, View, TextInput, Image, ScrollView, TouchableOpacity } from 'react-native';
-  import Layout from '../components/layout_medic'; // ajuste o caminho se necessário
-  import Icon from 'react-native-vector-icons/Feather'; // Ícone de seta
+  import Layout from '../components/layout_medic'; 
+  import Icon from 'react-native-vector-icons/Feather'; 
 
   const Medicos = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -12,7 +12,7 @@
     }
 
     const handleToggleExpand = (index: number) => {
-      setExpandedMedico(expandedMedico === index ? null : index); // Alterna a visibilidade
+      setExpandedMedico(expandedMedico === index ? null : index); 
     }
 
     const medicos = [
@@ -24,7 +24,7 @@
       { nome: 'Brenda de Almeida', especialidade: 'Ortopedista', crm: 'CRM 47.889-PR', cidade: 'Curitiba/PR', telefone: '(51) 99999-8888', endereco: 'Av. das Graças Altas, 633 - Curitiba/PR', cep: '66.777-100' },
     ];
 
-    // Filtrando médicos e mantendo ordem alfabética
+  
     const medicosFiltrados = medicos
       .filter((medico) => medico.nome.toLowerCase().includes(searchQuery.toLowerCase()))
       .sort((a, b) => a.nome.localeCompare(b.nome));
@@ -65,7 +65,7 @@
                     {medico.endereco && <Text style={styles.medicoInfo}>Endereço: {medico.endereco}</Text>}
                     {medico.cep && <Text style={styles.medicoInfo}>CEP: {medico.cep}</Text>}
                     
-                    {/* As opções serão exibidas abaixo do CEP */}
+                    
                     <View style={styles.optionsContainer } >
                       <TouchableOpacity style={styles.optionButton}>
                         <Text style={styles.optionText}>Editar</Text>
@@ -160,17 +160,17 @@
       marginTop: 10,
     },
     optionButton: {
-      backgroundColor: '#fff', // Cor de fundo do botão
+      backgroundColor: '#fff', 
       paddingVertical: 5,
       paddingHorizontal: 15,
       borderRadius: 5,
-      marginHorizontal: 5, // Espaçamento entre os botões
-      borderWidth: 2, // Espessura da borda
-      borderColor: '#0B3B60', // Cor da borda
+      marginHorizontal: 5, 
+      borderWidth: 2, 
+      borderColor: '#0B3B60', 
 
     },
     optionText: {
-      color: '#0B3B60', // Cor do texto do botão
+      color: '#0B3B60', 
       fontSize: 14,
     }
   });

@@ -153,15 +153,15 @@ const styles = StyleSheet.create({
   medicoName: {
     fontSize: 18,
     fontWeight: 'bold',
-    color: '#00213D', // cor do nome do médico
+    color: '#00213D',
   },
   medicoInfo: {
     fontSize: 14,
     color: '#555',
   },
   medicoData: {
-    fontSize: 20, // Aumentando o tamanho da fonte da data
-    color: '#339CFF', // Cor da data
+    fontSize: 20, 
+    color: '#339CFF', 
     fontWeight: 'bold',
   },
   medicoDetails: {
@@ -196,17 +196,17 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   optionButton: {
-    backgroundColor: '#fff', // Cor de fundo do botão
+    backgroundColor: '#fff', 
     paddingVertical: 5,
     paddingHorizontal: 15,
     borderRadius: 5,
-    marginHorizontal: 5, // Espaçamento entre os botões
-    borderWidth: 2, // Espessura da borda
-    borderColor: '#0B3B60', // Cor da borda
+    marginHorizontal: 5, 
+    borderWidth: 2, 
+    borderColor: '#0B3B60', 
 
   },
   optionText: {
-    color: '#0B3B60', // Cor do texto do botão
+    color: '#0B3B60', 
     fontSize: 14,
   }
 });

@@ -52,13 +52,13 @@ const styles = StyleSheet.create({
     width: 300,
     height: 300,
     marginBottom: 70,
-    marginTop: -120, // melhor que usar bottom
+    marginTop: -120, 
   },
   text: {
     fontSize: 20,
     color: '#333',
     marginBottom: 40,
-    marginTop: -160, // ajuste
+    marginTop: -160, 
   },
   buttonsContainer: {
     width: '80%',

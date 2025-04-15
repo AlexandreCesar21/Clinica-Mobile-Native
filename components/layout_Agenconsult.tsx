@@ -33,18 +33,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     borderTopWidth: 1,
     borderColor: '#ddd',
-    borderRadius: 5, // Arredondar os cantos dos botões
-    marginBottom: 10, // Adicionando espaço entre os botões
-    width: '90%', // Ajustando a largura dos botões
-    alignSelf: 'center', // Centralizando os botões horizontalmente
+    borderRadius: 5, 
+    marginBottom: 10, 
+    width: '90%', 
+    alignSelf: 'center', 
   },
   concluirButton: {
-    backgroundColor: '#0B3B60', // Cor do botão "Concluir cadastro"
+    backgroundColor: '#0B3B60', 
   },
   cancelarButton: {
-    backgroundColor: '#fff', // Cor do botão "Cancelar"
-    borderWidth: 2, // Espessura da borda
-    borderColor: '#0B3B60', // Cor da borda
+    backgroundColor: '#fff', 
+    borderWidth: 2, 
+    borderColor: '#0B3B60', 
   },
   buttonText: {
     color: '#fff',

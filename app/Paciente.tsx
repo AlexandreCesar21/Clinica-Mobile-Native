@@ -24,7 +24,6 @@ const ListaPacientes = () => {
     { nome: 'Brenda de Almeida', cidade: 'Curitiba/PR', email: 'brenda@gmail.com' , telefone: '(51) 99999-8888', endereco: 'Av. das Graças Altas, 633 - Curitiba/PR', cep: '66.777-100' },
   ];
 
-  // Filtro de médicos com base na pesquisa do nome
   const medicosFiltrados = medicos
     .filter((medico) => medico.nome.toLowerCase().includes(searchQuery.toLowerCase()))
     .sort((a, b) => a.nome.localeCompare(b.nome));
@@ -45,7 +44,7 @@ const ListaPacientes = () => {
 
       <ScrollView style={styles.scrollContainer}>
         {searchQuery.length > 0 ? (
-          // Se há pesquisa, exibe apenas os resultados filtrados SEM separar por letras
+       
           medicosFiltrados.map((medico, index) => (
             <View key={index} style={styles.medicoContainer}>
               <View style={styles.medicoHeader}>
@@ -80,7 +79,7 @@ const ListaPacientes = () => {
             </View>
           ))
         ) : (
-          // Se não há pesquisa, exibe a lista normalmente organizada por letras
+         
           letras.map((letra) => (
             <View key={letra} style={styles.letterSection}>
               <Text style={styles.letterTitle}>{letra}</Text>
@@ -186,17 +185,17 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   optionButton: {
-    backgroundColor: '#fff', // Cor de fundo do botão
+    backgroundColor: '#fff', 
     paddingVertical: 5,
     paddingHorizontal: 15,
     borderRadius: 5,
-    marginHorizontal: 5, // Espaçamento entre os botões
-    borderWidth: 2, // Espessura da borda
-    borderColor: '#0B3B60', // Cor da borda
+    marginHorizontal: 5,
+    borderWidth: 2, 
+    borderColor: '#0B3B60', 
 
   },
   optionText: {
-    color: '#0B3B60', // Cor do texto do botão
+    color: '#0B3B60', 
     fontSize: 14,
   }
 });

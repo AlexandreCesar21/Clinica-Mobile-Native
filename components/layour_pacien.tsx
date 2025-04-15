@@ -6,7 +6,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   const router = useRouter();
 
   const handleCadastrarPaciente = () => {
-    router.push('/Cadastro/CadastroPacien'); // Caminho correto para a tela de cadastro de pacientes
+    router.push('/Cadastro/CadastroPacien'); 
   };
 
   return (
